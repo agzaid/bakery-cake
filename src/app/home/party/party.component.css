@@ -1,0 +1,11 @@
+.container1{
+    background-image: linear-gradient(rgb(255,200,197),rgba(255, 200, 190, 0.356));
+}
+
+.row{
+    background-image: url('/assets/boy1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 110%;
+    height: 25em;
+}

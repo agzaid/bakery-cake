@@ -1,0 +1,19 @@
+.containr {
+    padding: 2em;
+    color: rgb(121, 120, 120);
+    background-color: rgba(88, 161, 161, 0.24);
+}
+
+.containr h3{
+    color: rgb(78, 76, 76);
+    padding: .5em;
+
+}
+
+.containr .fas{
+    margin-bottom: .5em;
+    font-size: 4em;
+    background: -webkit-linear-gradient(rgb(248, 232, 82), rgb(255, 151, 102));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

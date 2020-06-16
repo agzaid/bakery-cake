@@ -1,0 +1,16 @@
+.row{
+    width: 110%;
+    height: 19em;
+    background-image:linear-gradient(rgba(158, 92, 92, 0.5),rgba(0,0,0,.6)), url('https://media.chatterblock.com/files/contentitem_images/toddler-birthday-party-ideas-in-san-francisco-178-8d4671.jpg');
+}
+
+.row1{
+    background-color: rgba(211, 231, 231, 0.404);
+    padding: 3px 10px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.row1 span{
+    color: tomato;
+}

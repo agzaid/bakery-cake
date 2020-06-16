@@ -1,0 +1,103 @@
+.container{
+    margin-bottom: 7em;
+}
+
+.col-lg-2{
+    background-color: rgb(227, 230, 228);
+    height: 150px;
+    margin: 0 10px  0 10px ;
+    top: -25px;
+    color: rgb(121, 120, 120);
+    font-size: 20px;
+    border-radius: 30px;
+    box-shadow: 1px 2px 8px 1px slategrey;
+}
+
+
+
+.container p {
+    margin-top: 10px;
+}
+
+.section1 p {
+    color:rgb(121, 120, 120);
+}
+
+.section1 h2{
+    color: #000;
+    font-weight: 400;
+}
+
+.section1 h6{
+    color: rgb(109, 106, 106);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.section2{
+    margin-top: 30px;
+}
+
+.section2 p{
+    color:rgb(121, 120, 120);
+}
+
+.section2 h6{
+    color: rgb(109, 106, 106);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.section2 span{
+    color: rgb(59, 59, 59);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.section2 .fas{
+    font-size: 4em;
+    transform: rotate(90deg);
+    /* background: linear-gradient(to left, #ffc845, #fe3859);   */
+    cursor: pointer;
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(248, 232, 82), rgb(255, 151, 102));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+        
+      
+
+.section2 .fas:hover {
+    font-size: 72px;
+    transition: all .5s ease-out;
+  background: -webkit-linear-gradient(rgb(199, 25, 25), rgb(204, 236, 21));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+button.btn{
+    flex: 1 1 auto;
+        margin: 10px;
+        padding: 10px 30px ;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        /* box-shadow: 0 0 10px #eee; */
+        border-radius: 50px;
+    background-image: linear-gradient(to right, #facd39 0%, #ff7852 21%, #f6d365 100%);
+}
+
+button.btn:hover{
+    background-position: right center;
+
+}
+
+.animate:hover{
+    cursor: pointer;
+    transition: .5s ease-out;
+    transform: translate3d(10px, -10px, -10px)
+}

@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg text-center" id="addClass">
+    <a class="navbar-brand" id="brand" href="/">
+        <img src="/assets/5.png" alt="bakery cake" width="80" class="img-fluid" loading="lazy">
+        <span class="d-none d-sm-block">Cakes Bakery</span>
+    </a>
+    <button (click)="isMenuCollapsed = !isMenuCollapsed" class="navbar-toggler d-md-block d-lg-none ml-auto" type="button"
+        data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+    </button>
+
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/home" (click)="isMenuCollapsed">Home <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/about" (click)="isMenuCollapsed">About Us</a>
+            </li>
+            <li class="nav-item dropdown" ngbDropdown>
+                <a ngbDropdownToggle class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#" (click)="isMenuCollapsed">Services</a>
+                    <a class="dropdown-item" href="#" (click)="isMenuCollapsed">New Products</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" (click)="isMenuCollapsed">Company News</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" (click)="isMenuCollapsed">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="isMenuCollapsed">Contact
+                    Us</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>

@@ -1,0 +1,49 @@
+.container{
+  background-color:mintcream ;
+  border-radius: 50px;
+  width: 100%;
+  margin-top: 2em;
+  color: rgb(184, 76, 76);
+}
+
+.container p {
+  color: rgb(148, 148, 148);
+}
+
+.container .rowa{
+    margin-bottom: 2em;
+    padding: 2em;
+}
+
+.card{
+  background-color: rgba(206, 214, 209, 0.253);
+    height: auto;
+    margin:20px 0px 13px 0px;
+    padding: .5em;
+    color: rgb(184, 76, 76);
+    font-size: 20px;
+    border-radius: 30px;
+    box-shadow: 1px 2px 8px 1px slategrey;
+}
+
+
+.container .pad{
+  margin-left: 1em;
+  width: 200px;
+  overflow: hidden;
+}
+
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }

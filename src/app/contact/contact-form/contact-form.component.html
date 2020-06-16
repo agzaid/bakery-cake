@@ -1,0 +1,96 @@
+<div class="container justify-content-between text-center">
+    <div class="row rowa">
+        <div class="col-lg-12">
+            <h3>Contact Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, assumenda.</p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-5">
+            <div class="row">
+                <div class="col-lg-12 card">
+                    <h4>Address</h4>
+                    <p>123 Meet Ghamr, Dakahlia 4567 Mansoura City Egypt.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-sm-12 card">
+                    <h4>Phone</h4>
+                    <p>+222 111 333 4444</p>
+                    <p>+222 111 333 5555</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 card">
+                    <h4>Mail</h4>
+                    <p>Mail1@example.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-12 card pad">
+            <h4>Get In Touch</h4>
+
+            <form class="example-form">
+                <table class="example-full-width" cellspacing="0">
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>First name</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </td>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Long Last Name That Will Be Truncated</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                </table>
+
+                <p>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Address</mat-label>
+                        <textarea matInput placeholder="Ex: 27.Faisal ST."></textarea>
+                    </mat-form-field>
+                </p>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input ngModel name="username" #username="ngModel" matInput required
+                        placeholder="Ex. test@test.com">
+                    <mat-hint>Enter a valid email address</mat-hint>
+                    <mat-error *ngIf="username.errors.required">
+                        Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="username.invalid">
+                        Email is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+                <table class="example-full-width" cellspacing="0">
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>City</mat-label>
+                                <input matInput placeholder="Ex. Mansoura">
+                            </mat-form-field>
+                        </td>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>State</mat-label>
+                                <input matInput placeholder="Ex. Dakahlia">
+                            </mat-form-field>
+                        </td>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Postal Code</mat-label>
+                                <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="13111">
+                                <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <button mat-raised-button color="accent">Send</button>
+        </div>
+    </div>
