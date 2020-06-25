@@ -7,7 +7,12 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireModule } from "@angular/fire";
+
 import { DomSanitizer } from '@angular/platform-browser';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +26,9 @@ import { PartyComponent } from './home/party/party.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactFormComponent } from './contact/contact-form/contact-form.component';
 import { PopupComponent } from './home/popup/popup.component';
+import { LoginComponent } from './login/login.component';
+import { environment } from 'src/environments/environment';
+import { GallaryComponent } from './gallary/gallary.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +42,9 @@ import { PopupComponent } from './home/popup/popup.component';
     PartyComponent,
     ContactComponent,
     ContactFormComponent,
-    PopupComponent
+    PopupComponent,
+    LoginComponent,
+    GallaryComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +56,10 @@ import { PopupComponent } from './home/popup/popup.component';
     MatButtonModule,
     FormsModule,
     MatDialogModule,
+    AngularFireModule.initializeApp(environment.firebaseApiKey),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    AngularFireModule
   ],
   providers: [],
   bootstrap: [AppComponent]

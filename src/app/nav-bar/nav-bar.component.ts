@@ -1,3 +1,4 @@
+import { AuthService } from './../shared/auth.service';
 import { Component, OnInit, Inject, HostListener } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
@@ -10,7 +11,7 @@ export class NavBarComponent implements OnInit {
 
   isMenuCollapsed: boolean = true;
 
-  constructor(@Inject(DOCUMENT) private document: Document) { }
+  constructor(@Inject(DOCUMENT) private document: Document, public authService:AuthService) { }
 
   @HostListener('window:scroll',[])
   onWindowScroll() {
@@ -23,6 +24,10 @@ export class NavBarComponent implements OnInit {
   };
 
   ngOnInit(): void {
+  }
+
+  logout(){
+    this.authService.logout();
   }
 
 }

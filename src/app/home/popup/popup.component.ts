@@ -12,6 +12,7 @@ export class PopupComponent implements OnInit {
 
   selectingredient:Ingredient;
   subscription: Subscription;
+  src="https://www.youtube.com/embed/lzOT1Jntz64";
 
   constructor(private ingredientService:IngredientService) { }
 
