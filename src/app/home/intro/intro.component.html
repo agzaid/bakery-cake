@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container animate__animated animate__bounce">
     <div class="row justify-content-center align-items-center">
-        <div class="col-lg-2 text-center animate" *ngFor="let ingredient of ingredients;"
+        <div class="col-lg-2 text-center animate fadeIn" *ngFor="let ingredient of ingredients;"
          mat-button (click)="openDialog(ingredient)">
             <p>{{ingredient.name}}</p>
             <img [src]="ingredient.imgUrl" class="img" alt="{{ingredient.name}}" height="80">
@@ -17,7 +17,7 @@
                 Suspendisse interdum velit vel qu dapibus condimentum.</p>
             <button class="btn" (click)="open(content)"> Learn More </button>
         </div>
-        <div class="col-lg-6 text-center">
+        <div class="col-lg-6 text-center"  data-aos="flip-left">
             <img src="/assets/6.png"
                 alt="img" class="img-fluid" width="">
         </div>

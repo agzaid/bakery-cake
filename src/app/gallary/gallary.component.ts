@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import {  OwlOptions } from 'ngx-owl-carousel-o';
+
+
 @Component({
   selector: 'app-gallary',
   templateUrl: './gallary.component.html',
@@ -11,5 +14,6 @@ export class GallaryComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }

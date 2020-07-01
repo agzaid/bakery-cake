@@ -12,6 +12,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule } from "@angular/fire";
 
 import { DomSanitizer } from '@angular/platform-browser';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -59,7 +60,8 @@ import { GallaryComponent } from './gallary/gallary.component';
     AngularFireModule.initializeApp(environment.firebaseApiKey),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    AngularFireModule
+    AngularFireModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

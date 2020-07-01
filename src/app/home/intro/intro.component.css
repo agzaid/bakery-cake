@@ -89,6 +89,8 @@ button.btn{
         /* box-shadow: 0 0 10px #eee; */
         border-radius: 50px;
     background-image: linear-gradient(to right, #facd39 0%, #ff7852 21%, #f6d365 100%);
+    animation: bounce;
+    
 }
 
 button.btn:hover{
@@ -100,4 +102,23 @@ button.btn:hover{
     cursor: pointer;
     transition: .5s ease-out;
     transform: translate3d(10px, -10px, -10px)
+}
+
+.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        top: -200px;
+        transform: translate3d(0,-100%,0);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
 }

@@ -3,10 +3,27 @@
 } */
 
 .contaiiner{
-    
     background-color: rgba(164, 179, 174, 0.582);
 }
 
+.fadeIin{
+  animation-name: fadeIiin;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 1.86);
+  animation-duration: 2s;
+  /* animation: fadeIiin ease-in 2s; */
+}
+
+@keyframes fadeIiin{
+  0%{
+    opacity: 0;
+    transform: translate3d(0,-200%,0);
+  }
+  100%{
+    opacity: 1;
+    top: none;
+    transform: none;
+  }
+}
 
 /* BASIC */
 

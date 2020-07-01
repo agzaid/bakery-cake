@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-about',
@@ -11,5 +12,5 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }
