@@ -56,7 +56,12 @@ li .active {
     box-shadow: 0px 0px 7px 4px  rgb(221, 172, 80);
     transition: all .5s ease;
 }
-
+.navbar li a:hover[name="logout"]{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 7px 4px  rgb(221, 80, 80);
+    border-radius: 50px;
+}
 
 img{
     border-radius: 50%;
@@ -81,6 +86,11 @@ button .fa-bars{
 
     .navbar-brand{
         margin-left: 2vw;
-        
+    }
+
+    .sidebar{
+        left: 50px;
     }
 }
+
+
