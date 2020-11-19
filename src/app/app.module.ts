@@ -10,6 +10,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule } from "@angular/fire";
+import {MatCardModule} from '@angular/material/card';
 
 import { DomSanitizer } from '@angular/platform-browser';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -63,7 +64,8 @@ import { FooterComponent } from './footer/footer.component';
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireModule,
-    CarouselModule
+    CarouselModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
