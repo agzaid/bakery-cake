@@ -30,6 +30,7 @@ import { PopupComponent } from './home/popup/popup.component';
 import { LoginComponent } from './login/login.component';
 import { environment } from 'src/environments/environment';
 import { GallaryComponent } from './gallary/gallary.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { GallaryComponent } from './gallary/gallary.component';
     ContactFormComponent,
     PopupComponent,
     LoginComponent,
-    GallaryComponent
+    GallaryComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
