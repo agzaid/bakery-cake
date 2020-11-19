@@ -13,12 +13,14 @@ html, body {
   
   img {
     object-fit: cover;  /* perserves aspect ratio, but you don't see the whole image */ 
-     filter: grayscale(100%);
-    
+    cursor: pointer;
+    transition-duration: 0.3s;
+
   }
   
   img:hover {
-     filter: grayscale(0%);
+    filter: drop-shadow(30px 10px 4px rgb(176, 6, 228));
+    transform: scale(1.2);
   }
   
   #gallery-container{
@@ -43,6 +45,7 @@ html, body {
       width: 100%;
       height: auto;
   }
+  
   
   
   
